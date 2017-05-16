@@ -121,6 +121,8 @@
     <string name="pref_clear_text_traffic_summary_on">Clear text traffic (such as http) is allowed</string>
     <!-- Settings: clear traffic summary off -->
     <string name="pref_clear_text_traffic_summary_off">Clear text traffic (such as http) is not allowed</string>
+    <!-- Settings: default to incognito -->
+    <string name="pref_incognito_policy">Default to incognito</string>
 
     <!-- History: title -->
     <string name="history_title">History</string>
