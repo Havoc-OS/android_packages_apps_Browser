@@ -85,6 +85,7 @@ import com.havoc.browser.history.HistoryActivity;
 import com.havoc.browser.suggestions.SuggestionsAdapter;
 import com.havoc.browser.ui.SearchBarController;
 import com.havoc.browser.ui.UrlBarController;
+import com.havoc.browser.utils.AdBlocker;
 import com.havoc.browser.utils.IntentUtils;
 import com.havoc.browser.utils.PrefsUtils;
 import com.havoc.browser.utils.TabUtils;
@@ -248,6 +249,8 @@ public class MainActivity extends WebViewExtActivity implements
         mWebView.init(this, urlBarController, mLoadingProgress, mIncognito);
         mWebView.setDesktopMode(desktopMode);
         mWebView.loadUrl(url == null ? PrefsUtils.getHomePage(this) : url);
+
+        AdBlocker.init(this);
 
         mHasThemeColorSupport = WebViewCompat.isThemeColorSupported(mWebView);
 
