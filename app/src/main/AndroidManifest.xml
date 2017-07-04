@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.jelly">
+    package="com.havoc.browser">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -24,7 +24,7 @@
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
     <application
-        android:name=".JellyApp"
+        android:name=".BrowserApp"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
@@ -35,7 +35,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="org.lineageos.jelly.MainActivity"
+            android:name="com.havoc.browser.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:documentLaunchMode="always"
             android:hardwareAccelerated="true"
@@ -76,23 +76,23 @@
         </activity>
 
         <activity
-            android:name="org.lineageos.jelly.history.HistoryActivity"
+            android:name="com.havoc.browser.history.HistoryActivity"
             android:label="@string/history_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="org.lineageos.jelly.favorite.FavoriteActivity"
+            android:name="com.havoc.browser.favorite.FavoriteActivity"
             android:label="@string/favorite_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="org.lineageos.jelly.SettingsActivity"
+            android:name="com.havoc.browser.SettingsActivity"
             android:label="@string/settings_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="org.lineageos.jelly.fileprovider"
+            android:authorities="com.havoc.browser.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -102,12 +102,12 @@
 
         <provider
             android:name=".favorite.FavoriteProvider"
-            android:authorities="org.lineageos.jelly.favorite"
+            android:authorities="com.havoc.browser.favorite"
             android:exported="false" />
 
         <provider
             android:name=".history.HistoryProvider"
-            android:authorities="org.lineageos.jelly.history"
+            android:authorities="com.havoc.browser.history"
             android:exported="false" />
 
         <meta-data

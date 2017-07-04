@@ -21,7 +21,7 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, java) \
-    $(call all-java-files-under, java_lineage)
+    $(call all-java-files-under, java_havoc)
 
 LOCAL_USE_AAPT2 := true
 
@@ -34,7 +34,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.transition_transition \
     com.google.android.material_material
 
-LOCAL_PACKAGE_NAME := Jelly
+LOCAL_PACKAGE_NAME := Browser
 
 LOCAL_PRIVATE_PLATFORM_APIS := true
 
