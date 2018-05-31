@@ -36,7 +36,8 @@
         android:layout_height="match_parent"
         android:layout_margin="2dp"
         app:cardBackgroundColor="@color/card_background"
-        app:cardElevation="2dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="1dp"
         app:contentPadding="2dp">
 
         <RelativeLayout
