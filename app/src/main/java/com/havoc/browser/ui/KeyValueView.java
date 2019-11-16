@@ -16,12 +16,13 @@
 package com.havoc.browser.ui;
 
 import android.content.Context;
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 
 import com.havoc.browser.R;
 

@@ -16,10 +16,11 @@
 
 package com.havoc.browser.suggestions;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import org.json.JSONArray;
 import com.havoc.browser.utils.FileUtils;
